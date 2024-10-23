@@ -1,0 +1,79 @@
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  padding: 20px 40px; /* Increased padding for a more spacious layout */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+}
+
+.logo img {
+  width: 260px; /* Increased logo size */
+  height: auto;
+}
+
+.company-info {
+  text-align: right;
+}
+
+.company-info h2 {
+  margin: 0;
+  font-size: 28px; /* Slightly larger font for company name */
+  font-weight: 700;
+  color: #333;
+}
+
+.company-info p {
+  margin: 5px 0 0;
+  font-size: 16px;
+  color: #777;
+  letter-spacing: 1px;
+}
+
+body {
+  padding-top: 120px; /* Adjust based on the increased header height */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    padding: 15px 30px;
+  }
+
+  .logo img {
+    width: 100px; /* Slightly reduced logo size for tablets */
+  }
+
+  .company-info h2 {
+    font-size: 24px;
+  }
+
+  .company-info p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 10px 20px;
+  }
+
+  .logo img {
+    width: 80px; /* Reduced logo size for small mobile devices */
+  }
+
+  .company-info h2 {
+    font-size: 20px;
+  }
+
+  .company-info p {
+    font-size: 12px;
+  }
+}
